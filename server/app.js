@@ -12,9 +12,11 @@ app.use(express.json());
 
 // import routes
 const userRoute = require("./routes/userRoute")
+const notesRoute = require("./routes/notesRoute")
 
 // routes
 app.use("/user", userRoute)
+app.use("/note", notesRoute)
 
 // connect to DB
 mongoose
