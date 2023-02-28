@@ -4,11 +4,11 @@ export default createGlobalStyle`
     :root {
         /* Colors */
         --white-color: #ffffff;
-        --transparent-white-color: rgba(255, 255, 255, 0.5);
+        --transparent-white-color: rgba(255, 255, 255, 0.7);
         --dark-blue-color: #070724;
         --dark-grey-color: #38384f;
         --medium-grey-color: #838391;
-        --light-grey-color: #;
+        --light-grey-color: rgba(255, 255, 255, 0.2);
         --greyish-blue-color: #419ebb;
         --yellow-color: #eda249;
         --purple-color: #6f2ed6;
