@@ -3,9 +3,10 @@ import { Device } from "../../Devices";
 
 export const NavContainer = styled.nav`
     padding: 16px 24px;
+    border-bottom: 1px solid var(--light-grey-color);
 
     @media ${Device.tablet} {
-        padding: 32px;
+        padding: 32px 41px 27px 41px;
     }
 
     @media ${Device.desktop} {
@@ -19,19 +20,17 @@ export const NavContainer = styled.nav`
 
 export const NavTitle = styled.div`
     font-family: var(--heading-font);
-    padding-bottom: 16px;
     font-size: 1.75rem;
     color: var(--white-color);
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--light-grey-color);
-    margin-bottom: 24px;
 
     @media ${Device.tablet} {
         justify-content: center;
         border: none;
+        margin-bottom: 39px;
     }
 
     @media ${Device.desktop} {
@@ -68,7 +67,11 @@ export const NavList = styled.ul`
     @media ${Device.tablet} {
         gap: 19px;
         justify-content: center;
-        border-bottom: 1px solid var(--light-grey-color);
+
+        &.nav-links {
+            display: flex;
+            border-bottom: none;
+        }
 
         &.nav-links-active {
             display: flex;
@@ -112,7 +115,7 @@ export const NavItem = styled.li`
 
     @media ${Device.tablet} {
         border: none;
-        padding: 0 0 27px 0;
+        padding: 0;
         font-size: 0.6875rem;
         color: var(--transparent-white-color);
     }

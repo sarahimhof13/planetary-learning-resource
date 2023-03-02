@@ -29,7 +29,7 @@ const Navbar = () => {
                         return (
                             <NavItem key={data.id}>
                                 <NavPlanet color={data.color}/>
-                                <NavLink style={{ borderColor: `${data.color}` }} to={`planets/${data.name.toLowerCase()}`} >{data.name}</NavLink>
+                                <NavLink style={{ borderColor: `${data.color}` }} to={`planets/${data.name.toLowerCase()}`} onClick={toggleNav}>{data.name}</NavLink>
                                 <ChevronIcon src="../assets/icon-chevron.svg" />
                             </NavItem>
                         )

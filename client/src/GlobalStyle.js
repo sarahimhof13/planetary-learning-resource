@@ -26,6 +26,9 @@ export default createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
+    }
+
+    body {
         background-color: var(--dark-blue-color);
     }
 
